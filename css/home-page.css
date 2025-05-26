@@ -16,6 +16,7 @@ body {
   display: flex;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  position: relative;
 }
 
 .top-info_strip a {
@@ -330,5 +331,16 @@ button
 .profile-img2
 {
   border-radius: 30px;
+}
+.report{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  border-width: 5px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 25px;
+  background-color: rgb(237, 91, 91);
 }
 /*css for the director info boxes*/
