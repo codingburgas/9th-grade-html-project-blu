@@ -37,26 +37,59 @@ header {
   padding: 1%;
   display: flex;
   align-items: center;
+  justify-content: left; /* ново: разпределя елементите по хоризонтала */
+  gap: 10px;
+  position: relative;
 }
-
 
 header h1 {
   font-weight: 800;
   margin-left: 1.5%;
-  font-size: 120%px;
+  font-size: 120%;
   line-height: 1.5;
 }
+
+
+.report-button {
+  color: #fff;
+  background-color: rgb(237, 91, 91);
+  width: 150px;           /* square width */
+  height: 150px;          /* square height */
+  border-radius: 8px;    /* slight rounding */
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  font-size: 90px;     /* bigger icon/text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;     /* push it right */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;            /* no padding, controlled by size */
+  white-space: nowrap;
+}
+
+.report-button:hover {
+  background-color: rgb(200, 60, 60);
+}
+/*Making the buttons design*/
 
 #mvr
 {
    width: 8%;
    height: 8%;
+   min-width: 150px;
+   min-height: 150px;
 }
 
 #montana
 {
    width: 6%;
    height: 6%;
+   min-width: 100px;
+   min-height: 100px;
 }
 
 .bottom-nav-strip {
@@ -106,6 +139,7 @@ header h1 {
 .submenu a:hover {
   color: light-dark(#0a0505, #faf5f5);
   background-color: light-dark(#ee7777, #881111);
+   border-radius: 12px;
 }
 
 .dropdown:hover .submenu {
@@ -331,16 +365,5 @@ button
 .profile-img2
 {
   border-radius: 30px;
-}
-.report{
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
-  border-width: 5px;
-  border-color: white;
-  border-style: solid;
-  border-radius: 25px;
-  background-color: rgb(237, 91, 91);
 }
 /*css for the director info boxes*/

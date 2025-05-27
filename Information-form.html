@@ -1,75 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-
-        <link rel="stylesheet" href="../9th-grade-html-project-blu/css/information-form.css">
-    </head>
-    <body>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Информационна форма</title>
+    <link rel="stylesheet" href="css/information-form.css">
+</head>
+<body>
+    <a href="index.html" class="go-back-button">← Назад</a>
+    <form>
         <fieldset>
             <legend>Информационна форма</legend>
             <ul>
-            <label>Първо име</label>
-            <input type="text" placeholder="Въведете собствено име">
-            </ul>
-            <ul>
-            <label>Second name</label>
-            <input type="text" placeholder="Въведете второ име">
-            </ul>
-            <ul>
-            <label>Пол</label>
-            </ul>
-            <ul>
-            <label>мъжки</label>
-            <input type="radio">
-            <label>женски</label>
-            <input type="radio"><br>
-            </ul>
-            <ul>
-            <label>имейл</label>
-            <input type="email" placeholder="Въведете имейл">
-            </ul>
-            <ul>
-            <label>адрес</label>
-            <input type="address" placeholder="Въведете квартал/улица/блок" class="address">
-            </ul>
-            <ul>
-                <label>къде сте? </label>
-            </ul>
-            <ul>
-                <label>на местопроизшествието</label>
-                <input type="radio">
-                <label>другаде</label>
-                <input type="radio"><br>
-            </ul>
-            <ul>
-                <label>Колко голям е пожарът?</label>
-                <input type="size" placeholder="small/medium/large">
-            </ul>
-            <ul>
-                <label>Тип пожар:</label>
-                <select>
-                    <option>Пожар в сградата</option>
-                    <option>Пожар на превозно средство</option>
-                    <option>Пожар в гора</option>
-                    <option>Индустриален пожар</option>
-                    <option>Пожар в контейнер за боклук</option>
-                    <option>Електрически пожар</option>
-                    <option>Хибриден огън (комбиниран)</option>
-                </select>
-            </ul>
-            <ul>
-                <label>Знаете ли как е започнал пожарът?</label>
-                <input type="size">
-            </ul>
-            <ul>
-                <label>Има ли пламъци, дим или и двете?</label>
-                <input type="size">
+                <li>
+                    <label for="first-name">Първо име:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Въведете собствено име">
+                </li>
+                <li>
+                    <label for="second-name">Второ име:</label>
+                    <input type="text" id="second-name" name="second-name" placeholder="Въведете второ име">
+                </li>
+                <li>Пол:</li>
+                <li>
+                    <label><input type="radio" name="gender" value="male"> Мъжки</label>
+                    <label><input type="radio" name="gender" value="female"> Женски</label>
+                </li>
+                <li>
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" placeholder="Въведете имейл">
+                </li>
+                <li>
+                    <label for="address">Адрес:</label>
+                    <input type="text" id="address" name="address" placeholder="Въведете квартал/улица/блок" class="address">
+                </li>
+                <li>Къде сте?</li>
+                <li>
+                    <label><input type="radio" name="location" value="scene"> На местопроизшествието</label>
+                    <label><input type="radio" name="location" value="other"> Другаде</label>
+                </li>
+                <li>
+                    <label for="fire-size">Колко голям е пожарът?</label>
+                    <input type="text" id="fire-size" name="fire-size" placeholder="малък/среден/голям">
+                </li>
+                <li>
+                    <label for="fire-type">Тип пожар:</label>
+                    <select id="fire-type" name="fire-type">
+                        <option>Пожар в сградата</option>
+                        <option>Пожар на превозно средство</option>
+                        <option>Пожар в гора</option>
+                        <option>Индустриален пожар</option>
+                        <option>Пожар в контейнер за боклук</option>
+                        <option>Електрически пожар</option>
+                        <option>Хибриден огън (комбиниран)</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="fire-cause">Знаете ли как е започнал пожарът?</label>
+                    <input type="text" id="fire-cause" name="fire-cause">
+                </li>
+                <li>
+                    <label for="fire-appearance">Има ли пламъци, дим или и двете?</label>
+                    <input type="text" id="fire-appearance" name="fire-appearance">
+                </li>
             </ul>
             <footer>
-                <button class="button"><a href="index.html">Submit</a></button>
-                <button class="button2"><a href="index.html">Cancel</a></button>
+                <button type="submit" class="button">Изпрати</button>
+                <button type="reset" class="button2">Откажи</button>
             </footer>
         </fieldset>
-        <h1>Пазете се, евакуирайте се, ако е необходимо, и изчакайте аварийните екипи.</h1>
-    </body>
+    </form>
+
+    <h1 id="text-info">Пазете се, евакуирайте се, ако е необходимо, и изчакайте аварийните екипи.</h1><br>
+   <hr class="section-divider">
+    <h1 id="text-info">Информация за разграничаване на големината и опасността на пожара</h1><br>
+    <div class="info-box">
+        <p><strong>Малък:</strong> Ограничен огън (напр. кофа, кошче, малък предмет), не се разпространява.</p>
+        <p><strong>Среден:</strong> Пожарът се разпространява в рамките на една стая, автомобил и т.н.</p>
+        <p><strong>Голям:</strong> Горят няколко помещения, превозни средства или по-голяма площ.</p>
+        <p><strong>Извън контрол:</strong> Пожарът не може да бъде овладян без професионална намеса. Обхваща сгради, гори и др.</p>
+    </div>
+
+</div>
+</body>
 </html>
