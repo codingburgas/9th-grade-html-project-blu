@@ -1,17 +1,17 @@
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#fbf4f4, #0b0404);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#66b3ff, #471c1c);
   font-family: "Anton", sans-serif;
   font-weight: 400;
 }
 
 .top-info_strip {
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#d73c3c, #c32828);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#3390ec, #c32828);
   padding: 1% 1%;
   display: flex;
   border-top-left-radius: 30px;
@@ -20,20 +20,20 @@ body {
 }
 
 .top-info_strip a {
-  color: light-dark(#0a0505, #faf5f5);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
   text-decoration: none;
   font-size: 120%;
   font-weight: 800;
 }
 
 .top-info_strip a:hover {
-  color: light-dark(#0a0505, #faf5f5);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
   text-decoration: underline;
 }
 
 header {
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#f44848, #b70b0b);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#3390ec, #b70b0b);
   padding: 1%;
   display: flex;
   align-items: center;
@@ -51,8 +51,8 @@ header h1 {
 
 
 .report-button {
-  color: #fff;
-  background-color: rgb(237, 91, 91);
+  color: rgb(255, 238, 207);
+  background-color: #307fce;
   width: 150px;           /* square width */
   height: 150px;          /* square height */
   border-radius: 8px;    /* slight rounding */
@@ -72,7 +72,7 @@ header h1 {
 }
 
 .report-button:hover {
-  background-color: rgb(200, 60, 60);
+  background-color: rgb(255, 238, 207);
 }
 /*Making the buttons design*/
 
@@ -96,8 +96,8 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 2%;
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#f44848, #b70b0b);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#3390ec, #b70b0b);
   border: light-dark(#0a0505, #faf5f5);
   padding: 1% 1%;
   position: relative;
@@ -110,7 +110,7 @@ header h1 {
 }
 
 .bottom-nav-strip a {
-  color: light-dark(#0a0505, #faf5f5);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
   text-decoration: none;
   font-family: 'Anton', sans-serif;
   font-size: 120%;
@@ -122,8 +122,8 @@ header h1 {
   position: absolute;
   top: 100%;
   left: 0;
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#ee7777, #881111);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#3390ec, #881111);
   border: light-dark(#0a0505, #faf5f5);
   padding: 1%;
   min-width: 50%;
@@ -133,12 +133,12 @@ header h1 {
 .submenu a {
   display: block;
   padding: 8px 16px;
-  color: light-dark(#0a0505, #faf5f5);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
 }
 
 .submenu a:hover {
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#ee7777, #881111);
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#2871bb, #881111);
    border-radius: 12px;
 }
 
@@ -180,8 +180,8 @@ button
   justify-content: center;
   width: 22%;
   aspect-ratio: 1 / 1;
-  color: light-dark(#0a0505, #faf5f5);
-  background-color: light-dark(#ee7777, #881111);
+  color: light-dark(rgb(255, 238, 207), #000000);
+  background-color: light-dark(#3390ec, #881111);
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
@@ -197,6 +197,7 @@ button
 }
 
 .panel-button:hover {
+  color: light-dark(black, rgb(255, 238, 207));
   background-color: light-dark(#fbf4f4, #0b0404);
   transform: scale(1.05);
 }
@@ -219,7 +220,7 @@ button
 .info-section {
   width: 100%;
   color: light-dark(#0a0505, #0a0505);
-  background-color: light-dark(#d73c3c, #c32828);
+  background-color: light-dark(#cc00ff, #c32828);
   padding: 2% 5%;
   box-sizing: border-box;
   font-family: 'Anton', sans-serif;
@@ -246,7 +247,7 @@ button
 
 .info-box {
   flex: 1 1 45%;
-  background-color: light-dark(#d73c3c, #c32828);
+  background-color: light-dark(#000000, #c32828);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 12px;
@@ -298,15 +299,15 @@ button
 
 .panel {
   flex: 1 1 47%;
-  background: #fff7f7;
+  background: rgb(255, 238, 207);
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
 .panel-header {
-  color: light-dark(#0a0505, #ffffff);
-  background-color: light-dark(#d73c3c, #c32828);
+  color: light-dark(rgb(255, 238, 207), #ffffff);
+  background-color: light-dark(#3390ec, #c32828);
   padding: 10px;
   font-weight: bold;
   text-align: center;
