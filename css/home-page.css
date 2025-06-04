@@ -73,6 +73,30 @@ header h1 {
 .report-button:hover {
  background-color: light-dark(#0e1f30, #240202);
 }
+
+.map-button {
+  color: rgb(255, 238, 207);
+  background-color: light-dark(#509ff3, #580505);
+  width: 150px;          
+  height: 150px;         
+  border-radius: 8px;  
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  font-size: 90px;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;   
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;          
+  white-space: nowrap;
+}
+.map-button:hover {
+   background-color: light-dark(#0e1f30, #240202);
+}
 /*Making the buttons design*/
 
 #mvr {
@@ -362,3 +386,15 @@ header h1 {
   border-radius: 30px;
 }
 /*css for the director info boxes*/
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.0em;
+  color: light-dark(#3390ec, #881111);
+  background-color: light-dark(#303030, #1a1a1a);
+  border-top: 1px solid light-dark(#ccc, #333);
+  margin-top: 40px;
+}
+
+/*css for footer*/
