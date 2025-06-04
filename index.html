@@ -1,134 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=!, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home-page.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/toggle-theme.js" defer></script>
-    <script src="https://kit.fontawesome.com/1843c0461f.js" crossorigin="anonymous"></script>
+    <script src="js/toggle-theme-button-animation" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1843c0461f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ОД - Монтана</title>
-
-</head>
-<body>
-
-<div class="top-info_strip">
-    <nav>
+  </head>
+  
+  <body>
+    <div class="top-info_strip">
+      <nav>
         <a href="https://www.mvr.bg/начало">Портал на МВР</a>
+      </nav>
+    </div>
+    <!--making the top info nav panel-->
+
+    <header>
+      <img
+        id="montana"
+        src="media/images/logo-montana.png"
+        alt="Лого на Монтана"
+      />
+      <h1>
+        Пожарна безопасност и защита на населението<br />Областна дирекция на
+        МВР - Монтана
+      </h1>
+      <img id="mvr" src="media/images/logo-mvr.png" alt="Лого на МВР" />
+      <a href="information-form.html" class="report-button" aria-label="Report"
+        >ДОКЛАДВАЙ</a
+      >
+    </header>
+    <!--making the middle info panel-->
+
+    <nav class="bottom-nav-strip">
+      <div class="dropdown">
+        <a href="#">ПОЖАРНИ ЦЕНТРОВЕ</a>
+        <div class="submenu">
+          <a href="#">Монтана</a>
+          <a href="#">Берковица</a>
+          <a href="#">Лом</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ЕКИПИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">АВТОМОБИЛИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ПРОИЗШЕСТВИЯ</a>
+        <div class="submenu">
+          <a href="#">Последни</a>
+        </div>
+      </div>
+    <!--making the bottom navbar and dropdown inside it-->
+
+      <button
+        id="theme-toggler"
+        class="theme-toggle"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          width="1em"
+          height="1em"
+          fill="currentColor"
+          stroke-linecap="round"
+          class="theme-toggle__classic"
+          viewBox="0 0 32 32"
+        >
+          <clipPath id="theme-toggle__classic__cutout">
+            <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle__classic__cutout)">
+            <circle cx="16" cy="16" r="9.34" />
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M16 5.5v-4" />
+              <path d="M16 30.5v-4" />
+              <path d="M1.5 16h4" />
+              <path d="M26.5 16h4" />
+              <path d="m23.4 8.6 2.8-2.8" />
+              <path d="m5.7 26.3 2.9-2.9" />
+              <path d="m5.8 5.8 2.8 2.8" />
+              <path d="m23.4 23.4 2.9 2.9" />
+            </g>
+          </g>
+        </svg>
+      </button>
     </nav>
-</div>
-<!--making the top info nav panel-->
+    <!--importing the animated theme toggle button-->
 
+    <section class="button-panels">
+      <a href="#" class="panel-button">
+        <img src="media/images/info-icon.png" alt="Icon 1" />
+        <span>Информационен бюлетин</span>
+      </a>
+      <a href="#" class="panel-button">
+        <img src="media/images/emergency-numbers-icon.png" alt="Icon 2" />
+        <span>Спешни телефони</span>
+      </a>
+      <a href="#" class="panel-button">
+        <img src="media/images/history-icon.png" alt="Icon 3" />
+        <span>История</span>
+      </a>
+      <a href="#" class="panel-button">
+        <img src="media/images/road-control-icon.png" alt="Icon 4" />
+        <span>Пътен контрол</span>
+      </a>
+    </section>
+    <!--making the qucik access buttons-->
 
-<header>
-  <img id="montana" src="media/images/logo-montana.png" alt="Лого на Монтана">
-  <h1>Пожарна безопасност и защита на населението<br>Областна дирекция на МВР - Монтана</h1>
-  <img id="mvr" src="media/images/logo-mvr.png" alt="Лого на МВР">
-
- <a href="information-form.html" class="report-button" aria-label="Report">📝</a>
-</header>
-<!--making the middle info panel-->
-
-<nav class="bottom-nav-strip">
-  <div class="dropdown">
-    <a href="#">ПОЖАРНИ ЦЕНТРОВЕ</a>
-    <div class="submenu">
-      <a href="#">Монтана</a>
-      <a href="#">Берковица</a>
-      <a href="#">Лом</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <a href="#">ЕКИПИ</a>
-  </div>
-
-  <div class="dropdown">
-    <a href="#">АВТОМОБИЛИ</a>
-  </div>
-
-  <div class="dropdown">
-    <a href="#">ПРОИЗШЕСТВИЯ</a>
-    <div class="submenu">
-      <a href="#">Последни</a>
-    </div>
-  </div>
-
-    <button id="theme-toggler">
-    <img id="theme-icon" src="media/images/theme-switch-icon.png" alt="Смяна на тема">
-  </button>
-
-</nav>
-<!--making the bottom navbar and dropdown inside it-->
-
-<section class="button-panels">
-  <a href="#" class="panel-button">
-    <img src="media/images/info-icon.png" alt="Icon 1">
-    <span>Информационен бюлетин</span>
-  </a>
-  <a href="#" class="panel-button">
-    <img src="media/images/info-icon.png" alt="Icon 2">
-    <span>Спешни телефони</span>
-  </a>
-  <a href="#" class="panel-button">
-    <img src="media/images/info-icon.png" alt="Icon 3">
-    <span>История</span>
-  </a>
-  <a href="#" class="panel-button">
-    <img src="media/images/info-icon.png" alt="Icon 4">
-    <span>Пътен контрол</span>
-  </a>
-</section>
-<!--making the qucik access buttons-->
-
-<section class="dual-panels">
-  <div class="panel">
-    <div class="panel-header">ЗА ОД НА МВР МОНТАНА</div>
-    <div class="panel-content">
-      <div class="links">
-        <h3>БЪРЗИ ВРЪЗКИ</h3>
-        <ul>
-          <li><a href="#">Ръководство</a></li>
-          <li><a href="#">Структура</a></li>
-          <li><a href="#">История</a></li>
-          <li><a href="#">Спешни телефони</a></li>
-        </ul>
+    <section class="dual-panels">
+      <div class="panel">
+        <div class="panel-header">ЗА ОД НА МВР МОНТАНА</div>
+        <div class="panel-content">
+          <div class="links">
+            <h3>БЪРЗИ ВРЪЗКИ</h3>
+            <ul>
+              <li><a href="#">Ръководство</a></li>
+              <li><a href="#">Структура</a></li>
+              <li><a href="#">История</a></li>
+              <li><a href="#">Спешни телефони</a></li>
+            </ul>
+          </div>
+          <div class="director">
+            <h3>РЪКОВОДСТВО</h3>
+            <img
+              src="media/images/director1.jpg"
+              alt="Пламен Томов"
+              class="profile-img2"
+            />
+            <p class="director-name">
+              Директор на ОДМВР – Монтана<br />Старши комисар Пламен Томов
+            </p>
+            <p class="director-description">Роден на 23.04.1976 г. в гр. Лом</p>
+            <p class="director-description">
+              Приемен ден: вторник от 14:00 до 16:00 ч.
+            </p>
+            <p class="director-description">Телефон: 096/301600</p>
+          </div>
+        </div>
       </div>
-      <div class="director">
-        <h3>РЪКОВОДСТВО</h3>
-        <img src="media/images/director1.jpg" alt="Пламен Томов" class="profile-img2">
-        <p class="director-name">Директор на ОДМВР – Монтана<br>Старши комисар Пламен Томов</p>
-        <p class="director-description">Роден на 23.04.1976 г. в гр. Лом</p>
-        <p class="director-description">Приемен ден: вторник от 14:00 до 16:00 ч.</p>
-        <p class="director-description">Телефон: 096/301600</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="panel">
-    <div class="panel-header">ПОЖАРНА БЕЗОПАСНОСТ И ЗАЩИТА НА НАСЕЛЕНИЕТО</div>
-    <div class="panel-content">
-      <div class="links">
-        <h3>БЪРЗИ ВРЪЗКИ</h3>
-        <ul>
-          <li><a href="#">Ръководство</a></li>
-          <li><a href="#">РС ПБЗН - Монтана</a></li>
-          <li><a href="#">РС ПБЗН - Лом</a></li>
-          <li><a href="#">РС ПБЗН - Берковица</a></li>
-        </ul>
+      <div class="panel">
+        <div class="panel-header">
+          ПОЖАРНА БЕЗОПАСНОСТ И ЗАЩИТА НА НАСЕЛЕНИЕТО
+        </div>
+        <div class="panel-content">
+          <div class="links">
+            <h3>БЪРЗИ ВРЪЗКИ</h3>
+            <ul>
+              <li><a href="#">Ръководство</a></li>
+              <li><a href="#">РС ПБЗН - Монтана</a></li>
+              <li><a href="#">РС ПБЗН - Лом</a></li>
+              <li><a href="#">РС ПБЗН - Берковица</a></li>
+            </ul>
+          </div>
+          <div class="director">
+            <h3>РЪКОВОДСТВО</h3>
+            <img
+              src="media/images/director2.jpg"
+              alt="Венцислав Райков"
+              class="profile-img2"
+            />
+            <p class="director-name">
+              Директор РД ПБЗН – Монтана<br />Комисар Венцислав Райков
+            </p>
+            <p class="director-description">
+              Роден на 28.10.1970 г. в гр. Монтана
+            </p>
+            <p class="director-description">
+              Приемен ден: вторник от 14:00 до 16:00 ч.
+            </p>
+            <p class="director-description">Телефон: 096 / 396 220</p>
+          </div>
+        </div>
       </div>
-      <div class="director">
-        <h3>РЪКОВОДСТВО</h3>
-        <img src="media/images/director2.jpg" alt="Венцислав Райков" class="profile-img2">
-        <p class="director-name">Директор РД ПБЗН – Монтана<br>Комисар Венцислав Райков</p>
-        <p class="director-description">Роден на 28.10.1970 г. в гр. Монтана</p>
-        <p class="director-description">Приемен ден: вторник от 14:00 до 16:00 ч.</p>
-        <p class="director-description">Телефон: 096 / 396 220</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!--making the director info boxes-->
-
-</body>
+    </section>
+    <!--making the director info boxes-->
+  </body>
 </html>

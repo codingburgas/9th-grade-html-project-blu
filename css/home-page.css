@@ -3,8 +3,8 @@
 }
 
 body {
-  color: light-dark(rgb(255, 238, 207), #faf5f5);
-  background-color: light-dark(#66b3ff, #471c1c);
+  color: light-dark(#ebe9fc, #faf5f5);
+  background-color: light-dark(#f3f4fb, #471c1c);
   font-family: "Anton", sans-serif;
   font-weight: 400;
 }
@@ -37,7 +37,7 @@ header {
   padding: 1%;
   display: flex;
   align-items: center;
-  justify-content: left; /* ново: разпределя елементите по хоризонтала */
+  justify-content: left; /*разпределя елементите по хоризонтала */
   gap: 10px;
   position: relative;
 }
@@ -45,51 +45,48 @@ header {
 header h1 {
   font-weight: 800;
   margin-left: 1.5%;
-  font-size: 120%;
+  font-size: 190%;
   line-height: 1.5;
 }
 
-
 .report-button {
   color: rgb(255, 238, 207);
-  background-color: #307fce;
-  width: 150px;           /* square width */
-  height: 150px;          /* square height */
-  border-radius: 8px;    /* slight rounding */
+  background-color: light-dark(#509ff3, #580505);
+  width: 400px;
+  height: 150px;
+  border-radius: 8px;
   font-weight: bold;
-  font-family: 'Anton', sans-serif;
-  font-size: 90px;     /* bigger icon/text */
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;     /* push it right */
+  margin-left: auto;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   text-decoration: none;
   box-sizing: border-box;
-  padding: 0;            /* no padding, controlled by size */
+  padding: 0;
   white-space: nowrap;
 }
 
 .report-button:hover {
-  background-color: rgb(255, 238, 207);
+ background-color: light-dark(#0e1f30, #240202);
 }
 /*Making the buttons design*/
 
-#mvr
-{
-   width: 8%;
-   height: 8%;
-   min-width: 150px;
-   min-height: 150px;
+#mvr {
+  width: 8%;
+  height: 8%;
+  min-width: 150px;
+  min-height: 150px;
 }
 
-#montana
-{
-   width: 6%;
-   height: 6%;
-   min-width: 100px;
-   min-height: 100px;
+#montana {
+  width: 6%;
+  height: 6%;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .bottom-nav-strip {
@@ -112,7 +109,7 @@ header h1 {
 .bottom-nav-strip a {
   color: light-dark(rgb(255, 238, 207), #faf5f5);
   text-decoration: none;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 120%;
   font-weight: 525;
 }
@@ -139,31 +136,36 @@ header h1 {
 .submenu a:hover {
   color: light-dark(rgb(255, 238, 207), #faf5f5);
   background-color: light-dark(#2871bb, #881111);
-   border-radius: 12px;
+  border-radius: 12px;
 }
 
 .dropdown:hover .submenu {
   display: block;
 }
 
-.bottom-nav-strip a:hover
-{ 
-    text-decoration: underline;
+.bottom-nav-strip a:hover {
+  text-decoration: underline;
 }
 
-button
-{
-  all: unset;
-  cursor: pointer;
-  flex: auto;
-}
-
-#theme-icon
-{
-  width: 4%;
-  height: 4%;
-}
 /*css for the dropdown submenu*/
+
+.theme-toggle {
+  margin-left: auto;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle__classic {
+  width: 80%; 
+  height: 80%;
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+}
 
 .button-panels {
   display: flex;
@@ -198,7 +200,7 @@ button
 
 .panel-button:hover {
   color: light-dark(black, rgb(255, 238, 207));
-  background-color: light-dark(#fbf4f4, #0b0404);
+  background-color: light-dark(#f3f4fb, #471c1c);
   transform: scale(1.05);
 }
 
@@ -220,10 +222,10 @@ button
 .info-section {
   width: 100%;
   color: light-dark(#0a0505, #0a0505);
-  background-color: light-dark(#cc00ff, #c32828);
+  background-color: light-dark(#ebe9fc, #c32828);
   padding: 2% 5%;
   box-sizing: border-box;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .section-header {
@@ -249,7 +251,7 @@ button
   flex: 1 1 45%;
   background-color: light-dark(#000000, #c32828);
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   box-sizing: border-box;
 }
@@ -270,7 +272,6 @@ button
 }
 
 .info-box ul li a {
-  color: var(--text);
   text-decoration: none;
 }
 
@@ -280,13 +281,6 @@ button
   display: block;
   margin: 15px auto;
   border-radius: 4px;
-}
-
-.director-name {
-  font-weight: bold;
-  margin: 10px 0;
-  color: #1976d2;
-  text-align: center;
 }
 
 .dual-panels {
@@ -299,9 +293,10 @@ button
 
 .panel {
   flex: 1 1 47%;
-  background: rgb(255, 238, 207);
+  color:#e3ecf7;
+  background-color: light-dark(#edf3f9, #ffffff); /* Example */
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.518);
   overflow: hidden;
 }
 
@@ -325,7 +320,8 @@ button
   flex: 1;
 }
 
-.links h3,.director h3 {
+.links h3,
+.director h3 {
   color: #1e1e1e;
   font-size: 1rem;
   margin-bottom: 10px;
@@ -350,21 +346,19 @@ button
   text-align: center;
 }
 
-.director-description
-{
+.director-description {
   padding-top: 1%;
   color: #0a0505;
   font-weight: bold;
 }
 
 .director-name {
-  color: #1a58a4;
+  color: light-dark(#3390ec, #881111);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.profile-img2
-{
+.profile-img2 {
   border-radius: 30px;
 }
 /*css for the director info boxes*/
