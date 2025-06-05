@@ -11,7 +11,7 @@ body {
 
 .top-info_strip {
   color: light-dark(rgb(255, 238, 207), #faf5f5);
-  background-color: light-dark(#3390ec, #c32828);
+  background-color: light-dark(#5fa6ee, #c32828);
   padding: 1% 1%;
   display: flex;
   border-top-left-radius: 30px;
@@ -373,7 +373,6 @@ header h1 {
 .director-description {
   padding-top: 1%;
   color: #0a0505;
-  font-weight: bold;
 }
 
 .director-name {
@@ -395,6 +394,8 @@ header h1 {
   background-color: light-dark(#303030, #1a1a1a);
   border-top: 1px solid light-dark(#ccc, #333);
   margin-top: 40px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 /*css for footer*/
