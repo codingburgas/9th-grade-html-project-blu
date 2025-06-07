@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/regions.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/toggle-theme.js" defer></script>
+    <script src="js/map-all-centers.js" defer></script>
+    <script src="js/rescue-teams-chart.js" defer></script>
+    <link rel="stylesheet"href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/toggle-theme-button-animation" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1843c0461f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ОД - Монтана</title>
+  </head>
+  
+  <body>
+    <div class="top-info_strip">
+      <nav>
+        <a href="https://www.mvr.bg/начало">Портал на МВР</a>
+      </nav>
+    </div>
+    <!--making the top info nav panel-->
+
+    <header>
+      <img
+        id="montana"
+        src="media/images/logo-montana.png"
+        alt="Лого на Монтана"
+      />
+      <h1>
+        Пожарна безопасност и защита на населението<br />Областна дирекция на
+        МВР - Монтана
+      </h1>
+      <img id="mvr" src="media/images/logo-mvr.png" alt="Лого на МВР" />
+      <a href="information-form.html" class="report-button" aria-label="Report">ДОКЛАДВАЙ</a>
+       <a href="map.html" class="map-button" aria-label="Report">🗺️</a>
+    </header>
+    <!--making the middle info panel-->
+
+
+    
+    <nav class="bottom-nav-strip">
+
+              <div class="dropdown">
+        <a href="index.html">ОБРАТНО</a>
+      </div>
+
+    <div class="dropdown">
+        <a href="#">ПОЖАРНИ ЦЕНТРОВЕ</a>
+        <div class="submenu">
+          <a href="montana-region.html">Монтана</a>
+          <a href="berkovitsa-region.html">Берковица</a>
+          <a href="lom-region.html">Лом</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ЕКИПИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">АВТОМОБИЛИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ПРОИЗШЕСТВИЯ</a>
+        <div class="submenu">
+          <a href="#">Последни</a>
+        </div>
+      </div>
+    <!--making the bottom navbar and dropdown inside it-->
+
+      <button
+        id="theme-toggler"
+        class="theme-toggle"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          width="1em"
+          height="1em"
+          fill="currentColor"
+          stroke-linecap="round"
+          class="theme-toggle__classic"
+          viewBox="0 0 32 32"
+        >
+          <clipPath id="theme-toggle__classic__cutout">
+            <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle__classic__cutout)">
+            <circle cx="16" cy="16" r="9.34" />
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M16 5.5v-4" />
+              <path d="M16 30.5v-4" />
+              <path d="M1.5 16h4" />
+              <path d="M26.5 16h4" />
+              <path d="m23.4 8.6 2.8-2.8" />
+              <path d="m5.7 26.3 2.9-2.9" />
+              <path d="m5.8 5.8 2.8 2.8" />
+              <path d="m23.4 23.4 2.9 2.9" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </nav>
+    <!--importing the animated theme toggle button-->
+
+
+<section class="info-section">
+  <div class="section-header">Пожарен център – Берковица</div>
+  <div class="info-grid">
+    <div class="info-box">
+      <p>
+        Пожарен център – Берковица е ключова структура към Регионална дирекция
+        „Пожарна безопасност и защита на населението“. Центърът отговаря за
+        пожарната безопасност и аварийно-спасителните дейности в област Берковица.
+      </p>
+      <p>
+        Екипът от професионалисти е на разположение 24/7, реагирайки бързо и
+        ефективно при пожари, бедствия, аварии и други извънредни ситуации.
+        С модерна техника и висока степен на подготовка, Пожарен център – Берковица
+        е гарант за сигурността и защитата на гражданите в региона.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div id="map" style="height: 450px; width: 100%; border-radius: 12px; margin: 20px 0;"></div>
+
+<section class="chart-section" style="max-width: 600px; margin: 40px auto;">
+  <canvas id="montanaChart" width="600" height="400"></canvas>
+</section>
+
+    <footer class="footer">
+  <p>&copy; 2025 Team Blu. Fire-&-safety-2025.</p>
+</footer>
+ <!--making a footer crediting our team-->
+
+    </body>
+</html>
