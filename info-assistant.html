@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Асистент</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home-page.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+    <script src="js/toggle-theme.js" defer></script>
+    <script src="js/toggle-theme-button-animation" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+        <div class="top-info_strip">
+      <nav>
+        <a href="https://www.mvr.bg/начало">Портал на МВР</a>
+      </nav>
+    </div>
+    <!--making the top info nav panel-->
+
+  <header>
+              <img
+        id="montana"
+        src="media/images/logo-montana.png"
+        alt="Лого на Монтана"
+      />
+
+    <div class="assistant-space">
+      <h1 class="text-3xl font-bold">Твоят AI Асистент</h1>
+      <p class="text-blue-100 mt-1">Винаги готов да помогне </p>
+  </header>
+
+  
+    <nav class="bottom-nav-strip">
+
+        <div class="dropdown">
+        <a href="index.html">ОБРАТНО</a>
+      </div>
+      
+      <div class="dropdown">
+        <a href="#">ПОЖАРНИ ЦЕНТРОВЕ</a>
+        <div class="submenu">
+          <a href="#">Монтана</a>
+          <a href="#">Берковица</a>
+          <a href="#">Лом</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ЕКИПИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">АВТОМОБИЛИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ПРОИЗШЕСТВИЯ</a>
+        <div class="submenu">
+          <a href="#">Последни</a>
+        </div>
+      </div>
+    <!--making the bottom navbar and dropdown inside it-->
+
+      <button
+        id="theme-toggler"
+        class="theme-toggle"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          width="1em"
+          height="1em"
+          fill="currentColor"
+          stroke-linecap="round"
+          class="theme-toggle__classic"
+          viewBox="0 0 32 32"
+        >
+          <clipPath id="theme-toggle__classic__cutout">
+            <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle__classic__cutout)">
+            <circle cx="16" cy="16" r="9.34" />
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M16 5.5v-4" />
+              <path d="M16 30.5v-4" />
+              <path d="M1.5 16h4" />
+              <path d="M26.5 16h4" />
+              <path d="m23.4 8.6 2.8-2.8" />
+              <path d="m5.7 26.3 2.9-2.9" />
+              <path d="m5.8 5.8 2.8 2.8" />
+              <path d="m23.4 23.4 2.9 2.9" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </nav>
+    <!--importing the animated theme toggle button-->
+  
+
+  <main class="max-w-4xl mx-auto p-4 mt-6">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/K1IzRxunaKy1N30Qeylsy"
+        width="100%"
+        style="height: 100%; min-height: 700px;"
+        frameborder="0"
+        class="w-full"
+      ></iframe>
+    </div>
+  </main>
+
+
+    <footer class="footer">
+  <p>&copy; 2025 Team Blu. Fire-&-safety-2025.</p>
+</footer>
+
+</body>
+</html>
