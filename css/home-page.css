@@ -397,5 +397,20 @@ header h1 {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+#logIn{
+  position: absolute;
+  top: 10px;
+  right: 30px;
 
+}
+.logIn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 20px;
+}
+.logIn:hover{
+  background-color: #1972ae;
+}
 /*css for footer*/
