@@ -414,4 +414,14 @@ header h1 {
 .logIn:hover{
   background-color: #1972ae;
 }
+.signIn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 20px;
+}
+.signIn:hover{
+  background-color: #1972ae;
+}
 /*css for footer*/
