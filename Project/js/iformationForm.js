@@ -15,6 +15,7 @@ map.on("click", function(e)
     lng = e.latlng.lng;
 });
 function getInformation() {
+  alert("Вашата информация е запазена. Благодарим!");
   localStorage.setItem(`latitude${localStorage.length}` , String(lat));
   localStorage.setItem(`longitude${localStorage.length-1}` , String(lng)); 
 };
