@@ -11,6 +11,7 @@
     <li><a href="#about-the-project">  The Project</a></li>
     <li><a href="#used-technologies">  Technologies</a></li>
     <li><a href="#contributors">   Contributors</a></li>
+    <li><a href="#Documents">   Documents</a></li>
     <li><a href="#download">    Download</a></li>
 </details>
     
@@ -51,8 +52,20 @@ The purpose of our project is to help firefighters by providing information rega
 <p4>👉🏼Petar Dimitrov . 9G . Scrum Trainer | PADimitrov@codingburgas.bg 👈🏼<p4><br>
 
 <img src="https://github.com/user-attachments/assets/54e7f041-53c0-438f-8467-dde8d73773ec" width="5000" alt="BlueStripe">
-    
+
+
+<h2 id="Documents">Documents</h2>
+
+<a href="https://codingburgas-my.sharepoint.com/:w:/g/personal/padimitrov23_codingburgas_bg/EaLtjhFwaWVKlpkWEaP3shsBMvTJ4jZcRvYZZ8BI5IFh3g?e=zWRpnQ"> Documentation </a>
+<br>
+<a href="https://codingburgas-my.sharepoint.com/:p:/g/personal/padimitrov23_codingburgas_bg/ERZnlNXMD7xDj3KjuwpSRkAB4lbWISpPFS7DYKr3HMREEA?e=U9LEcG"> Presentation </a>
+
+<img src="https://github.com/user-attachments/assets/54e7f041-53c0-438f-8467-dde8d73773ec" width="5000" alt="BlueStripe">
+
 <h2 id="download">Download</h2>
+
+
+
     
 <p>If you enjoyed what you saw you can also clone our project for further expection. Enjoy!</p>
     
