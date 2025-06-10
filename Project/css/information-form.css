@@ -3,48 +3,48 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+ 
 body {
-    margin: 0;
-    padding: 20px;
-    background: linear-gradient(to bottom right, #2f3542, #57606f);
-    color: #fff;
+  color: light-dark(#ebe9fc, #faf5f5);
+  background-color: light-dark(#f3f4fb, #9e0c0c);
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
 }
-
+ 
 /* Form Layout */
 form {
     max-width: 700px;
     margin: 0 auto;
-    background-color: #1e1e2f;
+    background-color: #101011;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
 }
-
+ 
 /* Fieldset & Legend */
 fieldset {
     border: none;
     padding: 0;
 }
-
+ 
 legend {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #f5c542;
+    color: #ffffff;
     text-align: center;
 }
-
+ 
 /* List layout for form groups */
 ul {
     list-style-type: none;
     padding: 0;
 }
-
+ 
 li {
     margin-bottom: 20px;
 }
-
+ 
 /* Labels and Inputs */
 label {
     display: block;
@@ -52,7 +52,7 @@ label {
     font-size: 18px;
     font-weight: 500;
 }
-
+ 
 input[type="text"],
 input[type="email"],
 select {
@@ -61,10 +61,10 @@ select {
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #2a2a3d;
-    color: #fff;
+    background-color: #d4d1d1;
+    color: #282626;
 }
-
+ 
 /* Radio Groups */
 li label input[type="radio"] {
     margin-right: 8px;
@@ -72,14 +72,14 @@ li label input[type="radio"] {
     vertical-align: middle;
     margin-top: -2px;
 }
-
+ 
 /* Buttons */
 footer {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-
+ 
 .button,
 .button2 {
     padding: 14px 28px;
@@ -90,63 +90,63 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+ 
 .button {
     background-color: #2ecc71;
     color: #fff;
 }
-
+ 
 .button:hover {
-    background-color: #27ae60;
+    background-color: #1f8148;
 }
-
+ 
 .button2 {
     background-color: #e74c3c;
     color: #fff;
 }
-
+ 
 .button2:hover {
     background-color: #c0392b;
 }
-
+ 
 /* Info Message */
 h1#text-info {
     font-size: 25px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #ffeaa7;
+    color: #000000;
 }
-
+ 
 /* Info Box for fire size guidance */
 .info-box {
     max-width: 700px;
     margin: auto auto;
     background-color: #3a3d5c;
     padding: 20px;
-    border-left: 6px solid #f5c542;
+    border-left: 6px solid #000000;
     border-radius: 10px;
     line-height: 1.5;
     font-size: 20px;
-    color: #f1f1f1;
+    color: #0ba908;
 }
-
+ 
 .section-divider {
     border: none;
     height: 2px;
     margin: 40px 0;
-    background: linear-gradient(to right, transparent, #f5c542, transparent);
+    background: linear-gradient(to right, transparent, #000000, transparent);
     opacity: 0.3;
 }
-
+ 
 .go-back-button {
     position: absolute;
     top: 20px;
     left: 20px;
     text-decoration: none;
-    background-color: #3d3d3d;
-    color: #f5c542;
+    color: #ffffff;
     padding: 10px 16px;
+    background-color: #2563eb;
     border-radius: 8px;
     font-weight: bold;
     font-size: 25px;
@@ -154,5 +154,5 @@ h1#text-info {
 }
 
 .go-back-button:hover {
-    background-color: #2f2f2f;
+    background-color: #5274d4;
 }
