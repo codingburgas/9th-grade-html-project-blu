@@ -6,7 +6,7 @@
  
 body {
   color: light-dark(#ebe9fc, #faf5f5);
-  background-color: light-dark(#f3f4fb, #9e0c0c);
+  background-color: light-dark(#f3f4fb, #471c1c);
   font-family: "Anton", sans-serif;
   font-weight: 400;
 }
@@ -115,20 +115,20 @@ h1#text-info {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #000000;
+    color: light-dark(rgb(0, 0, 0), #faf5f5);
 }
  
-/* Info Box for fire size guidance */
+
 .info-box {
     max-width: 700px;
     margin: auto auto;
-    background-color: #3a3d5c;
+    background-color: light-dark(#ffffff, #640f0f);
     padding: 20px;
     border-left: 6px solid #000000;
     border-radius: 10px;
     line-height: 1.5;
     font-size: 20px;
-    color: #0ba908;
+    color: light-dark(rgb(0, 0, 0), #faf5f5);
 }
  
 .section-divider {
@@ -146,7 +146,7 @@ h1#text-info {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 16px;
-    background-color: #2563eb;
+    background-color: light-dark(#226bb4, #850606);
     border-radius: 8px;
     font-weight: bold;
     font-size: 25px;
@@ -154,5 +154,5 @@ h1#text-info {
 }
 
 .go-back-button:hover {
-    background-color: #5274d4;
+    background-color: light-dark(#3390ec, #b70b0b);
 }
