@@ -22,8 +22,7 @@ map.on("click", function (e) {
 
 function getInformation() {
 
-  localStorage.setItem(`latitude${localStorage.length}`, String(lat));
-  localStorage.setItem(`longitude${localStorage.length - 1}`, String(lng));
+  localStorage.setItem(`marker${localStorage.length}`, JSON.stringify({lat: lat, lng: lng}));
 
   const selectedTeam = document.getElementById("team-select").value;
   const selectedVehicle = document.getElementById("vehicle-select").value;
