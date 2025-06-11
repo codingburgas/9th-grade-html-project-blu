@@ -12,8 +12,12 @@ L.tileLayer(
 var lat = null;
 var lng = null;
 //add and delete markers on click
+var marker = null;
 map.on("click", function (e) {
-  var marker = new L.marker([e.latlng.lat, e.latlng.lng])
+  if (marker) {
+    map.removeLayer(marker);
+  }
+    marker = new L.marker([e.latlng.lat, e.latlng.lng])
     .addTo(map)
     .on("click", (e) => e.target.remove());
   lat = e.latlng.lat;
