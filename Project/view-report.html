@@ -5,19 +5,96 @@
     <title>Преглед на подадения сигнал</title>
     <link rel="stylesheet" href="css/information-form.css">
     <link rel="icon" href="data:,">
-    
-
-        <style>
-        h1 {
-        text-align: center;
-        color: light-dark(#000000, #faf5f5);
-        }
-    </style>
+    <link rel="stylesheet" href="css/viewReport.css">
+    <script src="js/toggle-theme.js" defer></script>
+    <script src="js/toggle-theme-button-animation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
 </head>
 <body>
-    <a href="index.html" class="go-back-button">← Назад</a>
-    <h1>Подаден сигнал за пожар</h1>
+<body>
+<header>
+      <img
+        id="montana"
+        src="media/images/logo-montana.png"
+        alt="Лого на Монтана"
+      />
+      <h1>
+        Пожарна безопасност и защита на населението<br />Областна дирекция на
+        МВР - Монтана
+      </h1>
+      <img id="mvr" src="media/images/logo-mvr.png" alt="Лого на МВР" />
+    </header>
+    <!--making the middle info panel-->
+
+    <nav class="bottom-nav-strip">
+
+              <div class="dropdown">
+        <a href="index.html">ОБРАТНО</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">ПОЖАРНИ ЦЕНТРОВЕ</a>
+        <div class="submenu">
+          <a href="montana-region.html">Монтана</a>
+          <a href="berkovitsa-region.html">Берковица</a>
+          <a href="lom-region.html">Лом</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="teams.html">ЕКИПИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="vehicles.html">АВТОМОБИЛИ</a>
+      </div>
+
+      <div class="dropdown">
+        <a href="map.html">ПРОИЗШЕСТВИЯ</a>
+        <div class="submenu">
+          <a href="view-report.html">Последни</a>
+        </div>
+      </div>
+    <!--making the bottom navbar and dropdown inside it-->
+
+      <button
+        id="theme-toggler"
+        class="theme-toggle"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          width="1em"
+          height="1em"
+          fill="currentColor"
+          stroke-linecap="round"
+          class="theme-toggle__classic"
+          viewBox="0 0 32 32"
+        >
+          <clipPath id="theme-toggle__classic__cutout">
+            <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle__classic__cutout)">
+            <circle cx="16" cy="16" r="9.34" />
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M16 5.5v-4" />
+              <path d="M16 30.5v-4" />
+              <path d="M1.5 16h4" />
+              <path d="M26.5 16h4" />
+              <path d="m23.4 8.6 2.8-2.8" />
+              <path d="m5.7 26.3 2.9-2.9" />
+              <path d="m5.8 5.8 2.8 2.8" />
+              <path d="m23.4 23.4 2.9 2.9" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </nav>
+    <h1 class="fire-title">Подаден сигнал за пожар</h1>
     <div id="report-container" class="info-box">
         <!-- Тук ще се покажат данните -->
     </div>
