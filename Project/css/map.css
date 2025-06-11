@@ -1,9 +1,32 @@
+body{
+    background-color: #061320;
+}
+
 #map{
     position: absolute;
-    top: 0;
+    top: 0.1;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 } 
+
+.go-back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 16px;
+    background-color: light-dark(#226bb4, #850606);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+    background-color: light-dark(#3390ec, #b70b0b);
+}

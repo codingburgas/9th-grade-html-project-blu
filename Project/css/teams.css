@@ -197,3 +197,19 @@ header h1 {
   font-size: 190%;
   line-height: 1.5;
 }
+
+.release-button
+{
+  color: light-dark(rgb(255, 238, 207), #faf5f5);
+  background-color: light-dark(#3390ec, #420303);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.release-button:hover {
+  background-color: light-dark(#1e558d, #070000);
+}

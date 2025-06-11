@@ -9,7 +9,9 @@ if (Array.isArray(dataList) && dataList.length > 0) {
             <p><strong>Пол:</strong> ${data.gender}</p>
             <p><strong>Имейл:</strong> ${data.email}</p>
             <p><strong>Адрес:</strong> ${data.address}</p>
-            <p><strong>Местоположение:</strong> ${data.location}</p>
+            <p><strong>Местоположение:</strong> ${data.fire-location}</p>
+            <p><strong>Екип:</strong> ${data.teams}</p>
+            <p><strong>Автомобил:</strong> ${data.vehicle}</p>
             <p><strong>Големина на пожара:</strong> ${data.fireSize}</p>
             <p><strong>Тип пожар:</strong> ${data.fireType}</p>
             <p><strong>Причина за пожара:</strong> ${data.fireCause}</p>

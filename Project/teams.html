@@ -7,6 +7,10 @@
   <script src="js/toggle-theme.js" defer></script>
   <script src="js/toggle-theme-button-animation.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="js/rescue-teams-chart.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/initialize-status.js"></script>
+  <script src="js/show-team-status.js"></script>
   <link rel="icon" href="data:,">
   
 </head>
@@ -130,6 +134,11 @@
       <p class="available">Наличен</p>
     </div>
   </div>
+
+  <section class="chart-section" style="max-width: 600px; margin: 40px auto;">
+  <canvas id="montanaChart" width="600" height="400"></canvas>
+</section>
+
 
       <footer class="footer">
   <p>&copy; 2025 Team Blu. Fire-&-safety-2025.</p>

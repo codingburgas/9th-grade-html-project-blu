@@ -18,6 +18,8 @@
     <script src="js/toggle-theme.js" defer></script>
     <script src="js/toggle-theme-button-animation.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="js/initialize-status.js"></script>
+    <script src="js/iformationForm.js"></script>
     <link rel="icon" href="data:,">
 </head>
 <body>
@@ -93,6 +95,39 @@
                     <label><input type="radio" name="location" value="scene"> На местопроизшествието</label>
                     <label><input type="radio" name="location" value="other"> Другаде</label>
                 </li>
+
+                      <li>
+                    <label for="fire-location">Местопроизшествието:</label>
+                    <input type="text" id="fire-location" name="fire-location" placeholder="Въведете квартал/улица/блок" class="fire-location">
+                </li>
+
+                      <li>
+                    <label for="team-select">Екип:</label>
+                    <select id="team-select" name="team">
+                        <option>Екип 1</option>
+                        <option>Екип 2</option>
+                        <option>Екип 3</option>
+                        <option>Екип 4</option>
+                        <option>Екип 5</option>
+                        <option>Екип 6</option>
+                        <option>Екип 7</option>
+                        <option>Екип 8</option>
+                    </select>
+                </li>
+
+                                </li>
+                      <li>
+                    <label for="vehicle-select">Автомобил:</label>
+                    <select id="vehicle-select" name="vehicle">
+                        <option>Автомобил 1</option>
+                        <option>Автомобил 2</option>
+                        <option>Автомобил 3</option>
+                        <option>Автомобил 4</option>
+                        <option>Автомобил 5</option>
+                    </select>
+                </li>
+
+
                 <li>
                     <label for="fire-size">Колко голям е пожарът?</label>
                     <input type="text" id="fire-size" name="fire-size" placeholder="малък/среден/голям">
